@@ -11,6 +11,8 @@ pip install -r requirements.txt
 # Usage
 ```
 python pic2txt.py path/to/image.jpg
+```
+```
 python pic2txt.py path/to/image.jpg --show --psm 6 --output path/to/text.txt
 ```
 
