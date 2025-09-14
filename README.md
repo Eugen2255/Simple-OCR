@@ -5,24 +5,24 @@ Simple OCR with Tesseract
 pip install -r requirements.txt
 
 # Usage
-python pic2txt.py path/to/image.jpg
-python pic2txt.py path/to/image.jpg --show --psm 6 --output path/to/text.txt
+`python pic2txt.py path/to/image.jpg`\
+`python pic2txt.py path/to/image.jpg --show --psm 6 --output path/to/text.txt`
 
 ## Optional arguments
-```
-`--show` Показать предобработанное изображение
-`--psm` Page Segmentation Mode для Tesseract (по умолчанию 1)
-`--output`, `-o` Путь для сохранения результат в файл
-`--lang` Языки для Tesseract (по умолчанию eng+rus
-`--scale`, -s Коэффицент изменения размера (по умолчанию 1.5)
-`--tesseract-cmd` Путь к исполняемому файлу tesseract
+
+`--show` Показать предобработанное изображение\
+`--psm` Page Segmentation Mode для Tesseract (по умолчанию 1)\
+`--output`, `-o` Путь для сохранения результат в файл\
+`--lang` Языки для Tesseract (по умолчанию eng+rus\
+`--scale`, -s Коэффицент изменения размера (по умолчанию 1.5)\
+`--tesseract-cmd` Путь к исполняемому файлу tesseract\
 `--mode` Режимы предобработки: "default", "document", "newspaper", "inverted", "comic" (по умолчанию default)
-```
+
 
 ### Modes
-**Document** - Универсальная бинаризация документов с легкой чисткой
-**Newspaper** - Режим для газет, агрессивный контраст, удаляем декоративные эл-ты
-**Inverted** - тот же document, но инвертирует изображение перед обрабокой
+**Document** - Универсальная бинаризация документов с легкой чисткой\
+**Newspaper** - Режим для газет, агрессивный контраст, удаляем декоративные эл-ты\
+**Inverted** - тот же document, но инвертирует изображение перед обрабокой\
 **Default** - выбирает между **document** и **inverted**
 
 # Examples
