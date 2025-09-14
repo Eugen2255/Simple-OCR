@@ -2,11 +2,13 @@
 Simple OCR with Tesseract
 
 # Dependencies
-pip install -r requirements.txt
+```pip install -r requirements.txt```
+[!NOTE]
+> На Windows вы должны добавить Tesseract в переменные среды или указывать путь до tesseract.exe через аргумент `--tesseract-cmd`
 
 # Usage
-`python pic2txt.py path/to/image.jpg`\
-`python pic2txt.py path/to/image.jpg --show --psm 6 --output path/to/text.txt`
+```python pic2txt.py path/to/image.jpg```\
+```python pic2txt.py path/to/image.jpg --show --psm 6 --output path/to/text.txt```
 
 ## Optional arguments
 
